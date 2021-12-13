@@ -1,0 +1,29 @@
+.book-cart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: auto 10%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-list {
+  list-style: none;
+  display: flex;
+}
+
+.book-info button {
+  margin-right: 1rem;
+  border-right: 1px solid #000;
+  padding-right: 10px;
+}
+
+.addbook-content {
+  margin: auto 10%;
+}
