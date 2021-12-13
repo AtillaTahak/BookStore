@@ -1,21 +1,20 @@
 import React from 'react';
 
-const Book = () => (
-  <div className="book-cart">
+const Book = (props) => (
+  <div className="book-cart" key={props.id}>
     <div className="book-info">
-      <span>Action</span>
-      <h3>The Hunger Games</h3>
-      <p>Suzanne Collins</p>
-      <div>
-        <ul>
-          <li>Comment</li>
-          <li>Remove</li>
-          <li>Edit</li>
-        </ul>
+      <span>{props.bookContent.title}</span>
+      <h3>{props.bookContent.name}</h3>
+      <p>{props.bookContent.author}</p>
+      <div className="btn-list">
+        <button type="button">Comment</button>
+        <button type="button">Remove</button>
+        <button type="button">Edit</button>
       </div>
     </div>
     <div className="book-end-ration">
-      %64
+      %
+      {props.bookContent.endRate}
       Completed
     </div>
     <div className="book-current">

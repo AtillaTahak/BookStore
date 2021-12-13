@@ -13,12 +13,12 @@ nav ul {
   justify-content: space-around;
 }
 
-.book-info ul {
+.btn-list {
   list-style: none;
   display: flex;
 }
 
-.book-info ul li {
+.book-info button {
   margin-right: 1rem;
   border-right: 1px solid #000;
   padding-right: 10px;
