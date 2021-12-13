@@ -1,11 +1,14 @@
 import React from 'react';
+import Book from './Book';
+import AddBook from './AddBook';
 
 const Books = ()=>{
     return(
         <div>
-            <h1>
-                Welcome Books
-            </h1>
+          <Book/>
+          <Book/>
+          <Book/>
+          <AddBook/>
         </div>
     )
 

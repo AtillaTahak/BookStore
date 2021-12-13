@@ -4,7 +4,7 @@ const Categories = ()=>{
     return(
         <div>
             <h1>
-                Welcome Categories
+            Under construction
             </h1>
         </div>
     )
