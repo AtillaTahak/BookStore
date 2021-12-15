@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Book from './Book';
 import AddBook from './AddBook';
-import { RemoveBook } from '../redux/books/books';
+import { getBook, RemoveBook } from '../redux/books/books';
 
 const Books = () => {
+  const dispatch = useDispatch();
   const books = useSelector((state) => state.booksReducer);
 
-  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getBook());
+  }, [dispatch]);
+
   const deleteBook = (book) => {
     dispatch(RemoveBook(book));
   };
@@ -15,7 +19,7 @@ const Books = () => {
     <div>
       {books.map((element) => (
         <Book
-          key={element.id}
+          key={element.item_id}
           bookContent={element}
           bookDelete={deleteBook}
         />
