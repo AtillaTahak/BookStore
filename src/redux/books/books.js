@@ -4,27 +4,7 @@ const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
 // books.js
 const initialState = [
-  {
-    id: 1,
-    categorie: 'Action',
-    title: 'The Hunger Games',
-    author: 'Suzanne Collins',
-    endRate: '64',
-  },
-  {
-    id: 2,
-    categorie: 'Action',
-    title: 'The Hunger Games',
-    author: 'Suzanne Collins',
-    endRate: '64',
-  },
-  {
-    id: 3,
-    categorie: 'Action',
-    title: 'The Hunger Games',
-    author: 'Suzanne Collins',
-    endRate: '64',
-  },
+
 ];
 
 export const addBook = (payload) => ({
