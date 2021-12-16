@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Book = (props) => (
-  <div className="book-cart" key={props.id}>
+  <div className="book-cart" key={props.item_id}>
     <div className="book-info">
-      <span>{props.bookContent.categorie}</span>
+      <span>{props.bookContent.category}</span>
       <h3>{props.bookContent.title}</h3>
       <p>{props.bookContent.author}</p>
       <div className="btn-list">

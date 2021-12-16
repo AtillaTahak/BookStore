@@ -7,15 +7,15 @@ const AddBook = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-  const [categorie, setCategorie] = useState('Action');
+  const [category, setCategorie] = useState('Action');
 
   const submitBookToStore = (e) => {
     e.preventDefault();
 
     const newBook = {
-      id: v4(),
+      item_id: v4(),
       title,
-      categorie,
+      category,
       author,
       endRate: '20',
     };
@@ -35,7 +35,7 @@ const AddBook = () => {
         <form onSubmit={submitBookToStore}>
           <input type="text" name="title" value={title} onChange={(e) => (setTitle(e.target.value))} />
           <input type="text" name="author" value={author} onChange={(e) => (setAuthor(e.target.value))} />
-          <select name="categories" id="categories" onChange={handleChange} value={categorie}>
+          <select name="category" id="category" onChange={handleChange} value={category}>
             <option value="Action">Action</option>
             <option value="Comedy">Comedy</option>
             <option value="Dram">Dram</option>
