@@ -6,7 +6,6 @@ import { addBook } from '../redux/books/books';
 const AddBook = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
   const [category, setCategorie] = useState('Action');
 
   const submitBookToStore = (e) => {
@@ -16,7 +15,7 @@ const AddBook = () => {
       item_id: v4(),
       title,
       category,
-      author,
+      author: 'some one',
       endRate: '20',
     };
 
@@ -33,14 +32,21 @@ const AddBook = () => {
       <h4>ADD NEW BOOK</h4>
       <div className="add-book-btns">
         <form onSubmit={submitBookToStore}>
-          <input type="text" name="title" value={title} onChange={(e) => (setTitle(e.target.value))} />
-          <input type="text" name="author" value={author} onChange={(e) => (setAuthor(e.target.value))} />
+          <input
+            className="book-title"
+            placeholder="Book title"
+            type="text"
+            name="title"
+            value={title}
+            onChange={(e) => (setTitle(e.target.value))}
+          />
+
           <select name="category" id="category" onChange={handleChange} value={category}>
             <option value="Action">Action</option>
             <option value="Comedy">Comedy</option>
             <option value="Dram">Dram</option>
           </select>
-          <input type="submit" onClick={submitBookToStore} value="ADD BOOK" />
+          <input className="add-book" type="submit" onClick={submitBookToStore} value="ADD BOOK" />
 
         </form>
       </div>
