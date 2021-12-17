@@ -24,7 +24,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://musing-stonebraker-0379e6.netlify.app/books)
+[Live Demo Link](https://musing-stonebraker-0379e6.netlify.app)
 
 
 
