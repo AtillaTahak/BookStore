@@ -5,7 +5,7 @@ const Book = (props) => (
     <div className="book-info">
       <span className="category">{props.bookContent.category}</span>
       <h3 className="title">{props.bookContent.title}</h3>
-      <p>{props.bookContent.author}</p>
+      <p>Author Area</p>
       <div className="btn-list">
         <button type="button">Comment</button>
         <button type="button" onClick={() => props.bookDelete(props)}>Remove</button>

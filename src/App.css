@@ -55,6 +55,13 @@ nav ul li a:hover {
   color: #0290ff;
 }
 
+.user-icon {
+  color: #0290ff;
+  top: 25px;
+  right: 0;
+  position: absolute;
+}
+
 .header-logo {
   background-color: #fff;
   width: 15rem;
@@ -286,4 +293,20 @@ form {
   border: none;
   color: white;
   margin-right: 2.15rem;
+}
+
+.book-info p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.btn-list button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #227ded;
 }

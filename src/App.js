@@ -4,6 +4,7 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
+import { BiUserCircle } from 'react-icons/bi';
 import Categories from './components/Categories';
 import Books from './components/Books';
 import './App.css';
@@ -24,7 +25,11 @@ const App = () => (
           <li>
             <Link to="/categories">Categories</Link>
           </li>
+          <li>
+            <BiUserCircle className="user-icon" size={45} />
+          </li>
         </ul>
+
       </nav>
       <Routes>
         <Route path="/books" element={<Books />} />
